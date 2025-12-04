@@ -151,27 +151,33 @@ Loopify's demo focuses on interacting with the linked list via the console:
 
 
 ## Testing
+
 I manually tested the playlist operations through the menu:
-    - Add/Print
-        - Added multiple songs and confirmed they appear in order.
-        - Verified printing on an empty playlist shows no songs but does not crash.
-    - Remove
-        - Removed a song from the:
-            - Beginning (head),
-            - Middle.
-            - End (tail),
-            - And tried titles that don't exits.
-        - Checked that printing after each removal shows the correct remaining songs.
-        - Confirmed that removing from a single-song playlist leaves the list empty.
-    - Play Next/ Previous
-        - Called playNext and playPrevious repeatedly in playlists of size 1 and >1.
-        - Verified that playback wraps correctly from tail->head and head->tail.
-        - Checked behaviour after shuffles and removals.
-    - Shuffle
-        - Shuffled lists of different sizes (2,3,4+ songs) and checked:
-            - Playlist size stays the same.
-            - All original songs are still present.
-            - Order changes most times the function is called.
+
+
+- **Add/Print**
+    - Added multiple songs and confirmed they appear in order.
+    - Verified printing on an empty playlist shows no songs but does not crash.
+
+- **Remove**
+    - Removed a song from the:
+        - Beginning (head)
+        - Middle
+        - End (tail)
+        - And tested titles that don't exist.
+    - Confirmed that printing after each removal shows the correct remaining songs.
+    - Verified that removing from a single-song playlist leaves the list empty.
+
+- **Play Next/ Previous**
+    - Called 'playNext' and 'playPrevious' repeatedly in playlists of size 1 and >1.
+    - Confirmed playback wraps correctly from tail->head and head->tail.
+    - Checked behaviour after shuffles and removals.
+
+- **Shuffle**
+    - Shuffled lists of different sizes (2,3,4+ songs) and verified:
+        - Playlist size stays the same.
+        - All original songs remain.
+        - Order changes most times the function is called.
     
 
 ## References (Description):
