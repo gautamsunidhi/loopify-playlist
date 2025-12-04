@@ -188,16 +188,16 @@ I manually tested the playlist operations through the menu:
 ## References(Cited):
 
 1. Vahid,F.,Lysecky,R.,Edgcomb,A.,Jimenez,A.,Lysecky,S.,Rajasekhar,Y.,& Wheatland,N.(2022). 
-   CSPB 2270: Computer Science 2: Data Structures. zybooks. 
+   *CSPB 2270: Computer Science 2: Data Structures. zybooks.*
    https://learn.zybooks.com/zybook/COLORADOCSPB2270DataStructuresGuinnFall2025
 
-2. CppReference.com(n.d.).C++ standard library reference. Retrieved November 21,2025, from 
+2. CppReference.com(n.d.).C++ *standard library reference.* Retrieved November 21,2025, from 
    https://en.cppreference.com/
 
-3. GeeksforGeeks.(n.d.).Shuffle a given array using Fisher-Yates shuffle algorithm. Retrieved November 21, 2025 from
+3. GeeksforGeeks.(n.d.).*Shuffle a given array using Fisher-Yates shuffle algorithm.* Retrieved November 21, 2025 from
    https://www.geeksforgeeks.org/dsa/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
 
-4. GeeksforGeeks.(n.d.).Doubly linked list. Retrieved November 21, 2025, from 
+4. GeeksforGeeks.(n.d.).*Doubly linked list.* Retrieved November 21, 2025, from 
    https://www.geeksforgeeks.org/dsa/doubly-linked-list/
 
 
