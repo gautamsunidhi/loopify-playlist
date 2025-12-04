@@ -13,13 +13,13 @@ int main()
     cout << "\n\n";
     cout << "Loopify: Doubly Linked Playlist Application" << endl;
     cout << "This program lets you build and play a music playlist." << endl;
-
+     cout << "\n\n";
     // Main menu loop.
     while(true)
     {
         // Print menu options.
-        cout << "\n";
         cout << "Playlist Menu" << endl;
+        cout << "\n";
         cout << "0 - Add a song" << endl;
         cout << "1 - Remove a song" << endl;
         cout << "2 - Print playlist" << endl;
@@ -27,6 +27,7 @@ int main()
         cout << "4 - Play previous song" << endl;
         cout << "5 - Shuffle playlist" << endl;
         cout << "Q - Quit" << endl;
+        cout << "\n";
         cout << "Enter your choice: ";
 
         // Read the user's menu choice as a whole string
@@ -42,6 +43,8 @@ int main()
             playlist.addSong(title);   // Add the song to the playlist.
 
             cout << "Song added to playlist." << endl;
+
+            cout << "\n";
         }
 
         // Option 1: Remove song
@@ -54,6 +57,8 @@ int main()
             playlist.removeSong(title);  // Remove the first song with this title.
 
             cout << "If the song was found, it has been removed." << endl;
+
+            cout << "\n";
         }
 
         // Option 2: Print the playlist.
@@ -63,12 +68,14 @@ int main()
             cout << "Current playlist: " << endl;
 
             playlist.printOnce();       // Print all songs in order
+
+            cout << "\n";
         }
 
         // Option 3: Play next song.
         else if (input == "3")
         {
-           cout << "\n Play the next song." << endl;
+           cout << "\nPlay the next song." << endl;
 
            string nextTitle = playlist.playNext();   //Move to the next song.
 
@@ -80,6 +87,8 @@ int main()
            {
             cout << "Now playing (next): " << nextTitle << endl;
            }
+
+           cout << "\n";
         }
         
         // Option 4: Play previous song.
@@ -98,6 +107,8 @@ int main()
                 cout << "Now playing (previous): " << prevTitle << endl;
 
             }
+
+            cout << "\n";
         }
 
         // Option 5: Shuffle playlist.
@@ -110,6 +121,8 @@ int main()
             cout << "Playlist has been shuffled." << endl;
             cout << "New order:" << endl;
             playlist.printOnce();
+
+            cout << "\n";
         }
 
         // Option Q: Quit
@@ -127,7 +140,16 @@ int main()
         {
             cout << "\nInvalid input. Please enter 0-5 or Q to quit." << endl;
         }
+
+        cout << "\n";
     }
 
     return 0;
 }
+
+/*
+How to compile:
+1.  cd project-files (to move into this folder because all of the files are in this subfolder)
+2.  g++ -std=c++17 main.cpp Playlist.cpp -o loopify
+3.  ./loopify
+*/

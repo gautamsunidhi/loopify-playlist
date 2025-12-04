@@ -43,18 +43,16 @@ void Playlist::addSong (string title) {
     if (head == nullptr) {    // The list has no songs yet.
         head = newNode;       // Head now points to this new song.
         tail = newNode;       // Tail also points to this new song.
-
-        // If nothing is currently selected, use this new song as the current song.
-        if (current == nullptr) {
-            current = head;
-        }
-        return; // No further work is needed in this case.
+        // current stays nullptr here; first playNext() will set it to head.
     }
 
     // Case 2: the playlist already has songs. Attach this song to the end.
-    newNode->prev = tail;   // The new song comes after the current tail.
-    tail->next = newNode;   // The current tail points forward to the new song.
-    tail = newNode;         // Tail now points to the new last song.
+    else {
+        newNode->prev = tail;   // The new song comes after the current tail.
+        tail->next = newNode;   // The current tail points forward to the new song.
+        tail = newNode;         // Tail now points to the new last song.
+
+    }
 }
 
 
@@ -279,7 +277,7 @@ void Playlist::shuffle() {
     head = arr[0];               // New first song in the playlist.
     tail = arr[count - 1];       // New last song in the playlist.
 
-    current = head;             // After shuffling, start with the first song again.
+    current = nullptr;             // let playNext() choose the new head on the next call.
 
 
     // Step 6: Free the dynamic array (but not the nodes themselves).
