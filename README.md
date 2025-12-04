@@ -161,11 +161,11 @@ Enter your choice:
 
 2. Print playlist
     - Choose 2 to see:
-      Current playlist:
-      1.A
-      2.B
-      3.C
-      4.D
+    Current playlist:
+    1.A
+    2.B
+    3.C
+    4.D
 
 3. Play next and previous
     - Choose 3 repeatedly to step forward through the list and wrap from D back to A.
