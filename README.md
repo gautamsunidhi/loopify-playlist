@@ -123,13 +123,16 @@ Enter your choice:
 
 All project source files are stored in the project-files directory.
 This folder contains:
-    - main.cpp (menu system and user interface)
-    - Playlist.cpp (implementation of playlist operations)
-    - Playlist.h (class declarations)
-    - SongNode.h (definition of the doubly linked list node)
-    - loopify (compiled executable after running g++)
+
+    - **main.cpp** - menu system and user interface
+    - **Playlist.cpp** - implementation of playlist operations
+    - **Playlist.h** - class declarations
+    - **SongNode.h** - definition of the doubly linked list node
+    - **loopify** - compiled executable after running g++
+
 The repository root contains the main README.md file.
-All compilation and program execution should be done from inside project-files.
+
+All compilation and program execution should be done from inside 'project-files/'.
 
 
 
