@@ -45,9 +45,9 @@ Creates a new 'SongNode' and attaches it to the **end** of the list.
 
 - **removeSong(title)**
 Walks through the list until it finds the first node with the matching title and removes it by relinking its neighbors:
-- If it is 'head', move 'head' to 'head->next'.
-- If it si 'tail', move 'tail' to 'tail->prev'.
-- Updates 'current' if needed so future 'playNext' / 'playPrevious' calls still work.
+   - If it is 'head', move 'head' to 'head->next'.
+   - If it is 'tail', move 'tail' to 'tail->prev'.
+   - Updates 'current' if needed so future 'playNext' / 'playPrevious' calls still work.
 
 
 
@@ -121,18 +121,15 @@ Enter your choice:
 
 ## File Structure
 
-Repository layout:
-
-loopify-playlist/
-|---README.md
-|---project-files/
-|   |--loopify          (compiled executable after running g++)
-|   |--main.cpp         (menu + user interface)
-|   |--Playlist.cpp     (implementation of playlist operations)
-|   |--Playlist.h       (playlist class declarations)
-|   |--SongNode.h       (node structure for doubly linked list)
-
-The README is located at the root of the repository. All source files (main.cpp, Playlist.cpp, Playlist.h, SongNode.h) and the resulting executable are stored inside the project-files folder.
+All project source files are stored in the project-files directory.
+This folder contains:
+    - main.cpp (menu system and user interface)
+    - Playlist.cpp (implementation of playlist operations)
+    - Playlist.h (class declarations)
+    - SongNode.h (definition of the doubly linked list node)
+    - loopify (compiled executable after running g++)
+The repository root contains the main README.md file.
+All compilation and program execution should be done from inside project-files.
 
 
 
