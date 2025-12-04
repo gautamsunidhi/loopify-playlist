@@ -86,7 +86,7 @@ Loopify: Doubly Linked Playlist Application
 This program lets you build and play a music playlist.
 
 
-### Playlist Menu
+Playlist Menu
 
 0 - Add a song
 1 - Remove a song
