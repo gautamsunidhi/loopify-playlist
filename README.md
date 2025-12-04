@@ -1,2 +1,4 @@
-# loopify-playlist
-Final Project for CSPB 2270. A music playlist implemented using a non-circular doubly-linked list in C++. Supports adding songs, removing songs, forward and backward traversal, and playlist shuffling.
+# Loopify: Doubly Linked Playlist"
+
+Loopify is a music playlist implemented with a non-circular doubly linked list. 
+The playlist supports adding/removign songs, forward and backward traversal, and looping playback (when you reach the end, playNext wraps back to the beginning.) A shuffle mode randomizes the playback order.
