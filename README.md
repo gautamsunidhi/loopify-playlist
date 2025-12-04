@@ -139,13 +139,14 @@ All compilation and program execution should be done from inside 'project-files/
 
 ## Application Demo
 Loopify's demo focuses on interacting with the linked list via the console:
-    - Shows how adding/removing nodes changes the linked list.
-    - Demonstrates bidirectional traversal with playNext and playPrevious.
-    - Demonstrates reordering nodes with shuffle without recreating or deleting the songs themselves.
-    - Handles edge cases like:
-        - Printing or playing when the playlist is empty.
-        - Playing next/previous in a single-song playlist.
-        - Removing head, tail, or the currently playing song.
+
+- Shows how adding/removing nodes changes the linked list.
+- Demonstrates bidirectional traversal with playNext and playPrevious.
+- Demonstrates reordering nodes with shuffle without recreating or deleting the songs themselves.
+- Handles edge cases like:
+    - Printing or playing when the playlist is empty.
+    - Playing next/previous in a single-song playlist.
+    - Removing head, tail, or the currently playing song.
 
 
 
