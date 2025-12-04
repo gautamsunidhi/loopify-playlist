@@ -75,7 +75,64 @@ Walks through the list until it finds the first node with the matching title and
     - Updates 'head', 'tail', and sets 'current' back to 'nullptr' so the next call to 'playNext()' starts at the new first song.
 
 
----
+
+## Installation / Setup
+
+### Requirements
+
+To run this project, you only need:
+
+- **A C++ compiler that supports C++17**
+  (For example: `g++` on Mac or Linux, or MinGW on Windows)
+
+- **Git** (only if you want to clone the repository instead of downloading the zip)
+
+## 1. Getting the Code
+
+### Option A - Clone the repository
+```bash
+git clone https://github.com/gautamsunidhi/loopify-playlist.git
+cd loopify-playlist/project-files
+```
+
+### Option B - Download ZIP
+- Click **Code -> Download ZIP** on GitHub
+- Unzip the folder
+- Go to:
+
+```
+loopify-playlist/project-files
+```
+
+## 2. Compiling the Program
+
+### On macOS / Linux
+```bash
+g++ -std=c++17 main.cpp Playlist.cpp -o loopify
+```
+
+### On Windows (using MinGW)
+```bash
+g++ -std=c++17 main.cpp Playlist.cpp -o loopify.exe
+```
+
+This will create the program you can run.
+
+
+## 3. Running the Program
+
+### On macOS / Linux
+```bash
+./loopify
+```
+
+### On Windows
+```bash
+loopify.exe
+```
+
+(or `.\loopify.exe` if preferred)
+
 
 
 ## Usage
