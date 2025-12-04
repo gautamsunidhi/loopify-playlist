@@ -6,7 +6,7 @@ Each song is stored in a node that points both **forward** and **backward**, whi
 The app includes a small text menu so you can build a playlist, shuffle it, and "play" songs by their titles.
 
 ## Features:
-- Doubly linked list playlist with 'head', 'tail,' and 'current' pointers.
+- Doubly linked list playlist with `head`, `tail`, and `current` pointers.
 - Menu-driven console interface:
     - Add a song by title.
     - Remove a song by title (first match).
@@ -24,55 +24,55 @@ The app includes a small text menu so you can build a playlist, shuffle it, and 
 The core of the project is a **doubly linked list**:
 
 
-- Each song is stored in a 'SongNode':
-    - 'string title'
-    - 'SongNode* prev'
-    - 'SongNode* next'
-- The 'Playlist' class keeps track of:
-    - 'head' - first node in the list
-    - 'tail' - last node in the list
-    - 'current' - node that is currently "playing"
+- Each song is stored in a `SongNode`:
+    - `string title`
+    - `SongNode* prev`
+    - `SongNode* next`
+- The `Playlist` class keeps track of:
+    - `head` - first node in the list
+    - `tail` - last node in the list
+    - `current` - node that is currently "playing"
 
 
 ### Main Operations
 
 
 - **addSong(title)**
-Creates a new 'SongNode' and attaches it to the **end** of the list.
-    - If the list is empty, 'head' and 'tail' both point to this node.
-    - Otherwise it links 'tail <-> newNode' and updates 'tail'.
+Creates a new `SongNode` and attaches it to the **end** of the list.
+    - If the list is empty, `head` and `tail` both point to this node.
+    - Otherwise it links `tail <-> newNode` and updates `tail`.
 
 
 - **removeSong(title)**
 Walks through the list until it finds the first node with the matching title and removes it by relinking its neighbors:
-   - If it is 'head', move 'head' to 'head->next'.
-   - If it is 'tail', move 'tail' to 'tail->prev'.
-   - Updates 'current' if needed so future 'playNext' / 'playPrevious' calls still work.
+   - If it is `head`, move `head` to `head->next`.
+   - If it is `tail`, move `tail` to `tail->prev`.
+   - Updates `current` if needed so future `playNext` / `playPrevious` calls still work.
 
 
 
 - **playNext()**
-    - If 'current' is 'nullptr' and the list is not empty, it starts at 'head'.
-    - Otherwise it moves to 'current->next'.
-    - If we were at 'tail' and there is no 'next', it **wraps around** to 'head'.
-    - Returns the title of the new 'current' node (or '""' if the list is empty).
+    - If `current` is `nullptr` and the list is not empty, it starts at `head`.
+    - Otherwise it moves to `current->next`.
+    - If we were at `tail` and there is no `next`, it **wraps around** to `head`.
+    - Returns the title of the new 'current' node (or `""` if the list is empty).
 
 
 
 
 - **playPrevious()**
-    - If 'current' is 'nullptr' and the list is not empty, it starts at 'tail'.
-    - Otherwise it moves to 'current->prev'.
-    - If we were at 'head' and there is no 'prev', it **wraps around** to 'tail'.
-    - Returns the title of the new 'current' node (or '""' if the list is empty).
+    - If `current` is `nullptr` and the list is not empty, it starts at `tail`.
+    - Otherwise it moves to `current->prev`.
+    - If we were at `head` and there is no `prev`, it **wraps around** to `tail`.
+    - Returns the title of the new `current` node (or `""` if the list is empty).
 
 
 
 - **shuffle()**
     - Copies pointers to all nodes into an array.
     - Uses a Fisher-Yates-style shuffle to randomize the array of pointers.
-    - Rebuilds the 'prev' / 'next' links according to the shuffled order.
-    - Updates 'head', 'tail', and sets 'current' back to 'nullptr' so the next call to 'playNext()' starts at the new first song.
+    - Rebuilds the `prev` / `next` links according to the shuffled order.
+    - Updates `head`, `tail`, and sets `current` back to `nullptr` so the next call to `playNext()` starts at the new first song.
 
 
 
@@ -156,9 +156,9 @@ Q - Quit
 Enter your choice:
 ```
 
-### Example session: Adding Songs and Testing 'playNext()'
+### Example session: Adding Songs and Testing `playNext()`
 
-Below is a sample console session that demonstrates how songs are added to the playlist and how 'playNext()' moves through the playlist with wrap-around behavior.
+Below is a sample console session that demonstrates how songs are added to the playlist and how `playNext()` moves through the playlist with wrap-around behavior.
 
 ```
 Enter your choice: 0
@@ -231,7 +231,7 @@ This folder contains:
 
 The repository root contains the main README.md file.
 
-All compilation and program execution should be done from inside 'project-files/'.
+All compilation and program execution should be done from inside `project-files/`.
 
 
 
@@ -268,7 +268,7 @@ I manually tested the playlist operations through the menu:
     - Verified that removing from a single-song playlist leaves the list empty.
 
 - **Play Next/ Previous**
-    - Called 'playNext' and 'playPrevious' repeatedly in playlists of size 1 and >1.
+    - Called `playNext` and `playPrevious` repeatedly in playlists of size 1 and >1.
     - Confirmed playback wraps correctly from tail->head and head->tail.
     - Checked behaviour after shuffles and removals.
 
