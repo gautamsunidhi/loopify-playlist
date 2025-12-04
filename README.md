@@ -156,31 +156,66 @@ Q - Quit
 Enter your choice:
 ```
 
-### Example session:
+### Example session: Adding Songs and Testing 'playNext()'
 
-1. Add a few songs
-    - Choose 0 and enter titles like A, B, C, D.
+Below is a sample console session that demonstrates how songs are added to the playlist and how 'playNext()' moves through the playlist with wrap-around behavior.
 
-2. Print playlist
-    - Choose 2 to see:
-    ```
-    Current playlist:
-    1.A
-    2.B
-    3.C
-    4.D
-    ```
+```
+Enter your choice: 0
+Add selected song.
+Enter song title: A
+Song added to playlist.
 
-3. Play next and previous
-    - Choose 3 repeatedly to step forward through the list and wrap from D back to A.
-    - Choose 4 repeatedly to step backward and wrap from A back to D.
+Enter your choice: 0
+Add selected song.
+Enter song title: B
+Song added to playlist.
 
-4. Shuffle
-    - Choose 5 to randomize order
-    - Use 2 and 3/4 again to see the shuffled order and play through it.
+Enter your choice: 0
+Add selected song.
+Enter song title: C
+Song added to playlist.
 
-5. Quit
-    - Choose Q or q to exit.
+Enter your choice: 0
+Add selected song.
+Enter song title: D
+Song added to playlist.
+
+Enter your choice: 2
+Print selected playlist.
+Current playlist:
+1.A
+2.B
+3.C
+4.D
+
+Enter your choice: 3
+Play the next song.
+Now playing (next): A
+
+Enter your choice: 3
+Play the next song.
+Now playing (next): B
+
+Enter your choice: 3
+Play the next song.
+Now playing (next): C
+
+Enter your choice: 3
+Play the next song.
+Now playing (next): D
+
+Enter your choice: 3
+Play the next song.
+Now playing (next): A  <-- wap-around to head
+```
+
+This demonstrates:
+
+- Songs are added in order (`A -> B -> C -> D`).
+- The first call to `playNext()` begins at the head of the list.
+- Successive calls move forward through the doubly linked list.
+- After reaching the tail (`D`), playback **wraps around** to the head (`A`).
 
 
 ## File Structure
