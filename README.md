@@ -281,7 +281,7 @@ I manually tested the playlist operations through the menu:
 
 ## References (Description):
 - Course materials and lectures for linked lists and doubly linked lists.
-- Standard C++ documentation for <string>, <cstdlib> / <ctime> used in the shuffle implementation.
+- Standard C++ documentation for <string>, <cstdlib>, <ctime> used in the shuffle implementation.
 - Fisher-Yates shuffle concept, adapted into array-based pointer shuffle.
 
 ## References(Cited):
