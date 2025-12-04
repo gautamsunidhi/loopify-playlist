@@ -207,7 +207,7 @@ Now playing (next): D
 
 Enter your choice: 3
 Play the next song.
-Now playing (next): A  <-- wap-around to head
+Now playing (next): A  <-- wrap-around to head
 ```
 
 This demonstrates:
