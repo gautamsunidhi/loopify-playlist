@@ -290,7 +290,7 @@ I manually tested the playlist operations through the menu:
    *CSPB 2270: Computer Science 2: Data Structures. zybooks.*
    https://learn.zybooks.com/zybook/COLORADOCSPB2270DataStructuresGuinnFall2025
 
-2. CppReference.com(n.d.).C++ *standard library reference.* Retrieved November 21,2025, from 
+2. Cppreference.com(n.d.).*C++ reference.* Retrieved November 21,2025, from 
    https://en.cppreference.com/
 
 3. GeeksforGeeks.(n.d.).*Shuffle a given array using Fisher-Yates shuffle algorithm.* Retrieved November 21, 2025 from
