@@ -83,7 +83,7 @@ Walks through the list until it finds the first node with the matching title and
 To run this project, you only need:
 
 - **A C++ compiler that supports C++17**
-  (For example: `g++` on Mac or Linux, or MinGW on Windows)
+  (For example: `g++` on Mac or Linux)
 
 - **Git** (only if you want to clone the repository instead of downloading the zip)
 
