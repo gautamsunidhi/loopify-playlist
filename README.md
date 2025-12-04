@@ -75,15 +75,18 @@ Walks through the list until it finds the first node with the matching title and
     - Updates 'head', 'tail', and sets 'current' back to 'nullptr' so the next call to 'playNext()' starts at the new first song.
 
 
+---
+
 
 ## Usage
 When we run the program, we see:
 
+```
 Loopify: Doubly Linked Playlist Application
 This program lets you build and play a music playlist.
 
 
-Playlist Menu
+### Playlist Menu
 
 0 - Add a song
 1 - Remove a song
@@ -93,8 +96,8 @@ Playlist Menu
 5 - Shuffle playlist
 Q - Quit
 
-Enter your choice: 
-
+Enter your choice:
+```
 ### Example session:
 1. Add a few songs
     - Choose 0 and enter titles like A, B, C, D.
