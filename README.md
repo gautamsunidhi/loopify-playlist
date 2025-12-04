@@ -155,13 +155,14 @@ Q - Quit
 
 Enter your choice:
 ```
+
 ### Example session:
 
 1. Add a few songs
     - Choose 0 and enter titles like A, B, C, D.
 
 2. Print playlist
-  - Choose 2 to see:
+    - Choose 2 to see:
     Current playlist:
     1.A
     2.B
