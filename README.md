@@ -111,7 +111,7 @@ loopify-playlist/project-files
 g++ -std=c++17 main.cpp Playlist.cpp -o loopify
 ```
 
-### On Windows (using MinGW)
+### On Windows 
 ```bash
 g++ -std=c++17 main.cpp Playlist.cpp -o loopify.exe
 ```
